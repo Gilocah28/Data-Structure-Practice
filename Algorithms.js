@@ -214,7 +214,7 @@
 // const strReverse = (str) => {
 //     let res = ''
 //     for(let i = 0; i < str.length; i++){
-//         const everyLetters = str[i] 
+//         const everyLetters = str[i]
 //         res = everyLetters + res
 //     }
 //     return res
@@ -250,7 +250,6 @@
 // const reverseInt = (n) => {
 //     const numToStr = n.toString()
 //     const backToNum = parseInt(numToStr.split('').reverse().join(''))
-
 //     return backToNum
 // }
 
@@ -258,15 +257,71 @@
 // console.log(reverseInt(-123456789))
 
 // ReverseInt Interger Version 2
-const reverseInt = (n) => {
-    let numToStr = n.toString().split('').reverse().join('')
-    numToStr = parseInt(numToStr)
+// const reverseInt = (n) => {
+//     let numToStr = n.toString().split('').reverse().join('')
+//     numToStr = parseInt(numToStr)
+//     if(n < 0){
+//         return numToStr * -1
+//     }
+//     return numToStr
+// }
 
-    if(n < 0){
-        return numToStr * -1
-    }
-    return numToStr
-}
+// console.log(reverseInt(-13))
 
 
-console.log(reverseInt(-123456789))
+// Max Character Version 1
+// const maxChar = str => {
+//     const charCounter = {};
+//     let maxChar = '';
+//     let maxCount = 0;
+
+//     for (let i = 0; i < str.length; i++) {
+//         const char = str[i]
+//         charCounter[char] = charCounter[char] + 1 || 1
+
+//         if (charCounter[char] > maxCount) {
+//             maxChar = char;
+//             maxCount = charCounter[char]
+//         }
+//     }
+//     return { maxChar, maxCount }
+// }
+
+
+// console.log(maxChar('I Loveeeeeee noodles'))
+// console.log(maxChar('1337'))
+
+// Fizzbuzz Version 1
+// const fizzBuzz = n => {
+//     for (let i = 1; i <= n; i++) {
+//         if (i % 5 === 0 && i % 3 === 0) {
+//             console.log('FizzBuzz')
+//         } else if(i % 5 === 0){
+//             console.log('Buzz')
+//         }else if (i % 3 === 0){
+//             console.log('Fizz')
+//         }else{
+//             console.log(i)
+//         }
+//     }
+// }
+// fizzBuzz(10)
+
+
+// Fizzbuzz Version 2
+// const fizzBuzz = n => {
+//     for (let i = 1; i <= n; i++) {
+//         let str = ''
+//         if(i % 3 === 0){
+//             str += 'Fizz'
+//         }
+//         if(i % 5 === 0){
+//             str += 'Buzz'
+//         }
+//         if(str === ''){
+//             str = i
+//         }
+//         console.log(str)
+//     }
+// }
+// fizzBuzz(5)
