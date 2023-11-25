@@ -212,7 +212,14 @@
 
 
 const strReverse = (str) => {
-    return str.split('').reverse().join('')
+    let res = ''
+    for(let i = 0; i < str.length; i++){
+        const everyLetters = str[i] 
+        res = everyLetters + res
+    }
+    return res
+    
 }
+// console.log(strReverse('hello'))
 
-console.log(strReverse('Hello'))
+console.log(strReverse('Hello Gibermar'))
