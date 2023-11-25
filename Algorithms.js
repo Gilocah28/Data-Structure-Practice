@@ -210,16 +210,63 @@
 // console.log(quickSort(arr))
 
 
+// Reverse String V1
+// const strReverse = (str) => {
+//     let res = ''
+//     for(let i = 0; i < str.length; i++){
+//         const everyLetters = str[i] 
+//         res = everyLetters + res
+//     }
+//     return res
 
-const strReverse = (str) => {
-    let res = ''
-    for(let i = 0; i < str.length; i++){
-        const everyLetters = str[i] 
-        res = everyLetters + res
+// }
+// // console.log(strReverse('hello'))
+
+// console.log(strReverse('Hello Gibermar'))
+
+// Palindrome Version 1
+// const palindrome = str => {
+//     str = str.toLowerCase()
+//     const reversed = str.split('').reverse().join('')
+//     if(str === reversed){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+// console.log(palindrome('Madam'))
+
+// Palindrome Version 2
+// const palindrome = str => {
+//     str = str.toLowerCase()
+//     return str === str.split('').reverse().join('')
+// }
+// console.log(palindrome('love'))
+// console.log(palindrome('Madam'))
+
+
+
+// ReverseInt Interger
+// const reverseInt = (n) => {
+//     const numToStr = n.toString()
+//     const backToNum = parseInt(numToStr.split('').reverse().join(''))
+
+//     return backToNum
+// }
+
+
+// console.log(reverseInt(-123456789))
+
+// ReverseInt Interger Version 2
+const reverseInt = (n) => {
+    let numToStr = n.toString().split('').reverse().join('')
+    numToStr = parseInt(numToStr)
+
+    if(n < 0){
+        return numToStr * -1
     }
-    return res
-    
+    return numToStr
 }
-// console.log(strReverse('hello'))
 
-console.log(strReverse('Hello Gibermar'))
+
+console.log(reverseInt(-123456789))
