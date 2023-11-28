@@ -79,6 +79,10 @@
 // console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3))
 
 
+
+
+// Day 2
+
 // function palindrome(str) {
 //     const pureStr = str.toLowerCase().match(/[a-z0-9]/g)
 //     return pureStr.join('') === pureStr.reverse().join('')
@@ -217,3 +221,33 @@
 // }
 
 // stepsV2(5)
+
+
+// const pyramidV1 = n => {
+//     for (let i = 1; i <= n; i++) {
+//         const padding = ' '.repeat(n - i)
+//         const hashes = "#".repeat(i * 2 - 1)
+//         console.log(padding + hashes + padding)
+//     }
+// }
+
+// pyramidV1(5)
+
+
+// const pyramidV2 = n => {
+//     for (let i = 1; i <= n; i++) {
+//         let piramid = ''
+
+//         for(let k = n - i; k > 0; k--){
+//             piramid += ' '
+//         }
+
+//         for(let j = i * 2 - 1; j > 0; j--){
+//             piramid += '#'
+//         }
+
+//         console.log(piramid)
+//     }
+// }
+
+// pyramidV2(5)

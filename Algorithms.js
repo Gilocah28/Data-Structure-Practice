@@ -446,3 +446,33 @@
 // }
 
 // stepsV2(5)
+
+
+// const pyramidV1 = n => {
+//     for (let i = 1; i <= n; i++) {
+//         const padding = ' '.repeat(n - i)
+//         const hashes = "#".repeat(i * 2 - 1)
+//         console.log(padding + hashes + padding)
+//     }
+// }
+
+// pyramidV1(10)
+
+
+// const pyramidV2 = n => {
+//     for (let i = 1; i <= n; i++) {
+//         let piramid = ''
+
+//         for(let k = n - i; k > 0; k--){
+//             piramid += ' '
+//         }
+
+//         for(let j = i * 2 - 1; j > 0; j--){
+//             piramid += '#'
+//         }
+
+//         console.log(piramid)
+//     }
+// }
+
+// pyramidV2(10)
