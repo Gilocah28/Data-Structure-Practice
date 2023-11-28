@@ -325,3 +325,124 @@
 //     }
 // }
 // fizzBuzz(5)
+
+
+// const capatalize = str => {
+//     const strSplit = str.split(' ')
+//     const emptyStrArr = []
+
+//     for(let i = 0; i < strSplit.length; i++){
+//         const word = strSplit[i]
+//         emptyStrArr.push(word[0].toUpperCase() + word.slice(1).toLowerCase())
+//     }
+//     return emptyStrArr.join(' ')
+// }
+
+
+// console.log(capatalize(`I'm a little tea pot`))
+
+
+
+// const chunk = (arr, size) => {
+//     const res = []
+
+//     for (let i = 0; i < arr.length; i++) {
+//         const item = arr[i]
+//         let last = res[res.length - 1]
+
+
+//         if (!last || last.length === size) {
+//             res.push([item])
+//         } else {
+//             last.push(item)
+//         }
+//     }
+//     return res
+// }
+// console.log(chunk([0, 1, 2, 3, 4, 5], 4))
+
+
+
+
+// const anagramsV1 = (strA, strB) => {
+//     strA = strA.toLowerCase().replace(/[\W_]+/g, '')
+//     strB = strB.toLowerCase().replace(/[\W_]+/g, '')
+
+//     if (strA.length !== strB.length) {
+//         return false
+//     }
+
+//     const strCount = {}
+//     for (let i = 0; i < strA.length; i++) {
+//         const aChar = strA[i]
+//         strCount[aChar] = strCount[aChar] + 1 || 1;
+//     }
+
+//     for (let i = 0; i < strB.length; i++) {
+//         const bChar = strB[i]
+//         if (!strCount[bChar]) {
+//             return false
+//         } else {
+//             strCount[bChar]--
+//         }
+//     }
+
+//     return true
+// }
+
+
+// console.log(anagramsV1('heart', 'earth'))
+
+
+// const caesarCipher = (str, shift) => {
+//     const alphabetArr = 'abcdefghijklmnopqrstuvwxyz'.split('');
+//     let res = ''
+//     for (let i = 0; i < str.length; i++) {
+//         const char = str[i]
+//         const idx = alphabetArr.indexOf(char)
+
+//         if (idx === -1) {
+//             res += char;
+//             continue;
+//         }
+//         const encodedIdx = (idx + shift) % 26;
+//         res += alphabetArr[encodedIdx]
+//     }
+//     return res
+// }
+
+// console.log(caesarCipher('abcd', 1))
+
+
+// const stepsV1 = n => {
+//     for(let i = 1; i <= n; i++){
+//         let step = ''
+
+//         for(let k = i; k > 0; k--){
+//             step += '#'
+//         }
+
+//         for(let j = n - i; j < 0; j--){
+//             step += ' '
+//         }
+
+//         console.log(step)
+//     }
+// }
+
+// stepsV1(5)
+
+
+// const stepsV2 = n => {
+
+//     for(let i = 1; i <= n; i++){
+//       let step = ''
+
+//       step += "#".repeat(i)
+//       step += ' '.repeat(n - i)
+
+//       console.log(step)
+//     }
+// }
+
+// stepsV2(5)
