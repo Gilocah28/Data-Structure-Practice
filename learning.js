@@ -38,4 +38,28 @@
 //     return s
 // };
 
+// var reverseString = function (s) {
+//     const strArr = []
+//     for (let i = 0; i < s.length; i++) {
+//         strArr.unshift(s[i])
+//     }
+//     return strArr
+// };
+
 // console.log(reverseString(["H","e","l","l","o"]))
+
+
+
+// var isPalindrome = function(x) {
+//     const reverseNum = x.toString().split('').reverse().join('')
+//     const strNum = parseInt(reverseNum)
+//     return x === strNum ? true : false
+// };
+
+// console.log(isPalindrome(-111))
+
+// var isPalindrome = function(x) {
+//     return x < 0 ? false : (x === +x.toString().split("").reverse().join(""));
+// };
+
+// console.log(isPalindrome(121))
