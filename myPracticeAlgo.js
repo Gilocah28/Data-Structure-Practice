@@ -320,28 +320,52 @@
 // console.log(linearSearchFind(arrOfFruits,'Grpes'))
 
 
-const arrOfFruits = ['Banana', 'Apple', 'Grapes', 'Pineapple', 'Orange'].sort()
+const arrOfFruits = ['Banana', 'Apple', 'Grapes', 'Pineapple', 'Orange']
 const arrNumber = []
 
-// const binarySearch = (arr, item) => {
-//     let left = 0
-//     let right = arr.length -1
-//     while(left <= right){
-//         const middle = Math.floor((left + right) / 2)
-//         const midValueOfArray = arr[middle]
-//         if(midValueOfArray === item){
-//             return middle // if you want to see the actual value of your searching code this arr[middle]
-//         }else if(midValueOfArray < item){
-//             left = middle + 1
-//         }else{
-//             right = middle - 1
-//         }
-//     }
-//     return -1
-// }
+const binarySearch = (arr, item) => {
+    let leftIndex = 0
+    let rightIndex = arr.length - 1
 
-// for(let i = 0; i <= 100; i++){
-//     arrNumber.push(i)
-// }
+    while (leftIndex <= rightIndex) {
+        const midIndex = Math.floor((leftIndex + rightIndex) / 2)
+        const midVal = arr[midIndex]
 
-// console.log(binarySearch(arrNumber, 100))
+        if (midVal === item) {
+            return midVal
+        } else if (midVal < item) {
+            leftIndex = midIndex + 1
+        } else {
+            rightIndex = midIndex - 1
+        }
+    }
+
+    return -1
+}
+
+for (let i = 0; i <= 100; i++) {
+    arrNumber.push(i)
+}
+
+console.log(binarySearch(arrNumber, 100))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
