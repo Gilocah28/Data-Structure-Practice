@@ -251,3 +251,97 @@
 // }
 
 // pyramidV2(5)
+
+
+
+
+
+// const vowels = str => {
+//     const vowel = ['a','e','i','o','u']
+//     let counter = 0
+//     for(let i = 0; i < str.length; i++){
+//         const char = str[i].toLowerCase()
+//         for(let k = 0; k < vowel.length; k++){
+//             const vowels = vowel[k]
+//             if(char === vowels){
+//                 counter++
+//             }
+//         }
+//     }
+//     return counter
+// }
+// console.log(vowels('I am a world-class developer using iteration'))
+// console.log(vowels('What'))
+// console.log(vowels('Gibermar P. Regalado'))
+// console.log(vowels('Erica Chico'))
+
+
+
+
+
+
+// const linearSearchIndexOf = (arr,val) => {
+
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].toLowerCase() === val.toLowerCase()){
+//             return i
+//         }
+//     }
+//     return -1
+// }
+
+
+// console.log(linearSearchIndexOf(arrOfFruits,'Ornge'))
+
+
+// const linearSearchIncludes = (arr,val) => {
+
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].toLowerCase() === val.toLowerCase()){
+//             return true
+//         }
+//     }
+//     return false
+// }
+
+// console.log(linearSearchIncludes(arrOfFruits,'Orange'))
+
+
+// const linearSearchFind = (arr,value) => {
+
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].toLowerCase() === value.toLowerCase()){
+//             return arr[i]
+//         }
+//     }
+//     return undefined
+// }
+
+// console.log(linearSearchFind(arrOfFruits,'Grpes'))
+
+
+const arrOfFruits = ['Banana', 'Apple', 'Grapes', 'Pineapple', 'Orange'].sort()
+const arrNumber = []
+
+// const binarySearch = (arr, item) => {
+//     let left = 0
+//     let right = arr.length -1
+//     while(left <= right){
+//         const middle = Math.floor((left + right) / 2)
+//         const midValueOfArray = arr[middle]
+//         if(midValueOfArray === item){
+//             return middle // if you want to see the actual value of your searching code this arr[middle]
+//         }else if(midValueOfArray < item){
+//             left = middle + 1
+//         }else{
+//             right = middle - 1
+//         }
+//     }
+//     return -1
+// }
+
+// for(let i = 0; i <= 100; i++){
+//     arrNumber.push(i)
+// }
+
+// console.log(binarySearch(arrNumber, 100))
