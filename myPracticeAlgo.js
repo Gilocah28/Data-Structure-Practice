@@ -387,7 +387,7 @@
 
 // console.log(stringPattern('lolol', 'lol'))
 
-const arr = [13, 12, 34, 46, 2, 4, 1, 6, 8, 3]
+// const arr = [13, 12, 34, 46, 2, 4, 1, 6, 8, 3]
 
 // function swap(arr, i, j) {
 //     let temp = arr[i]
@@ -432,18 +432,81 @@ const arr = [13, 12, 34, 46, 2, 4, 1, 6, 8, 3]
 
 // console.log(bubbleSortV2(arr))
 
-function selectionSort (arr) {
-    
-}
+
+
+// function selectionSort(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let swapIdx = i
+
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[j] < arr[swapIdx]) {
+//                 swapIdx = j
+//             }
+//         }
+//         swap(arr,i,swapIdx)
+//     }
+//     return arr
+// }
+// console.log(selectionSort(arr))
+
+
+// function selectionSort(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let swapIdx = i
+
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[j] < arr[swapIdx]) {
+//                 swapIdx = j
+//             }
+//         }
+
+//         let temp = arr[i]
+//         arr[i] = arr[swapIdx]
+//         arr[swapIdx] = temp
+//     }
+//     return arr
+// }
+// console.log(selectionSort(arr))
+
+// const arr1 = [1,5]
+// const arr2 = [4,6,7]
+
+// function mergeSort(arr1, arr2) {
+//     const result = []
+//     let pointerOne = 0
+//     let pointerTwo = 0
+
+//     while (pointerOne < arr1.length && pointerTwo < arr2.length) {
+
+//         if (arr1[pointerOne] < arr2[pointerTwo]) {
+//             result.push(arr1[pointerOne])
+//             pointerOne++
+//         } else {
+//             result.push(arr2[pointerTwo])
+//             pointerTwo++
+//         }
+
+//     }
+//     while (pointerOne < arr1.length) {
+
+//         result.push(arr1[pointerOne])
+//         pointerOne++
+
+//     }
+//     while (pointerTwo < arr2.length) {
+
+//         result.push(arr2[pointerTwo])
+//         pointerTwo++
+
+//     }
+
+//     return result
+// }
 
 
 
 
-
-
-
-
-
+// console.log(mergeSort(arr1,arr2))
 
 
 
