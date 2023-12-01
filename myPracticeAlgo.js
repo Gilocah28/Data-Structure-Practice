@@ -320,35 +320,121 @@
 // console.log(linearSearchFind(arrOfFruits,'Grpes'))
 
 
-const arrOfFruits = ['Banana', 'Apple', 'Grapes', 'Pineapple', 'Orange']
-const arrNumber = []
+// const arrOfFruits = ['Banana', 'Apple', 'Grapes', 'Pineapple', 'Orange']
+// const arrNumber = []
 
-const binarySearch = (arr, item) => {
-    let leftIndex = 0
-    let rightIndex = arr.length - 1
 
-    while (leftIndex <= rightIndex) {
-        const midIndex = Math.floor((leftIndex + rightIndex) / 2)
-        const midVal = arr[midIndex]
+// // Binary Search best use for sorted array
+// const binarySearch = (arr, item) => {
+//     let leftIndex = 0
+//     let rightIndex = arr.length - 1
 
-        if (midVal === item) {
-            return midVal
-        } else if (midVal < item) {
-            leftIndex = midIndex + 1
-        } else {
-            rightIndex = midIndex - 1
-        }
-    }
+//     while (leftIndex <= rightIndex) {
+//         const midIndex = Math.floor((leftIndex + rightIndex) / 2)
+//         const midVal = arr[midIndex]
 
-    return -1
+//         if (midVal === item) {
+//             return midVal
+//         } else if (midVal < item) {
+//             leftIndex = midIndex + 1
+//         } else {
+//             rightIndex = midIndex - 1
+//         }
+//     }
+
+//     return -1
+// }
+
+
+// console.log(binarySearch(arrNumber, 1))
+
+// var search = function (nums, target) {
+//     let firstIndex = 0
+//     let lastIndex = nums.length - 1
+//     while (firstIndex <= lastIndex) {
+//         const middleIndex = Math.floor((firstIndex + lastIndex) / 2)
+//         if(nums[middleIndex] < target){
+//             firstIndex = middleIndex + 1
+//         }else if(nums[middleIndex] > target){
+//             lastIndex = middleIndex - 1
+//         }else{
+//             return middleIndex
+
+//         }
+//     }
+//     return -1
+// };
+
+// console.log(search(arrNumber, 1000))
+
+// const stringPattern = (str, target) => {
+//     let count = 0
+
+//     for (let i = 0; i < str.length; i++) {
+//         for (let j = 0; j < target.length; j++) {
+//             if (target[j] !== str[i + j]) {
+//                 break;
+//             }
+//             if (j === target.length - 1) {
+//                 count++
+//             }
+//         }
+//     }
+
+//     return count
+
+// }
+
+// console.log(stringPattern('lolol', 'lol'))
+
+const arr = [13, 12, 34, 46, 2, 4, 1, 6, 8, 3]
+
+// function swap(arr, i, j) {
+//     let temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp;
+// }
+
+// const bubbleSort = arr => {
+//     let counter = 0 this for count the execution of the sorting array
+
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length - i; j++) {
+//             counter++
+//             if (arr[j] > arr[j + 1]) {
+//                 swap(arr, j, j + 1)
+//             }
+//         }
+//     }
+//     return {arr,counter}
+// }
+
+
+
+// console.log(bubbleSort(arr))
+// function bubbleSortV2(arr) {
+//     let counter = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length - i; j++) {
+//             counter++
+//             if(arr[j] > arr[j + 1]){
+//                 let temp = arr[j]
+//                 arr[j] = arr[j + 1]
+//                 arr[j + 1] = temp
+//             }
+//         }
+//     }
+//     return {
+//         arr,
+//         counter
+//     }
+// }
+
+// console.log(bubbleSortV2(arr))
+
+function selectionSort (arr) {
+    
 }
-
-for (let i = 0; i <= 100; i++) {
-    arrNumber.push(i)
-}
-
-console.log(binarySearch(arrNumber, 100))
-
 
 
 
